@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kai Gao's ToDo List</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+
+  <div class="outer">
+
+    <div class="container">
+      <img src="res/titleImg.jpeg" alt="">
+
+      <header>
+        <input type="text" placeholder="New Task..." id="task">
+        <!-- use fontawesome plus-square icon -->
+        <i id="add" class="fas fa-plus-square "></i>
+      </header>
+      <br>
+      <ul id="todos"></ul>
+      <br>
+      <button id="removeAll">Remove All</button>
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBB8sxPC4ch8fuF5o-31ydi0XVknIj8cvQ",
+      authDomain: "todolist-kaigao.firebaseapp.com",
+      databaseURL: "https://todolist-kaigao.firebaseio.com",
+      projectId: "todolist-kaigao",
+      storageBucket: "",
+      messagingSenderId: "393064635559"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+
+</html>
